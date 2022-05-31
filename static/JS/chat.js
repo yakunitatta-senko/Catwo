@@ -1,3 +1,1 @@
-function test(){
-alert("function completed");
-}
+alert("chat.js is activated")
