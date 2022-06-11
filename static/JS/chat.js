@@ -16,7 +16,7 @@ function test(){
 function handle(e){
     var key = e.which;
     if (key == 13){
-      alert(input);
+      alert(input.value);
       getInput();
     }
   }
