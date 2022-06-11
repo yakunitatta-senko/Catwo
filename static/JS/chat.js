@@ -25,4 +25,5 @@ function handle(e){
     // Gets Users Input
     var input = document.getElementById("user-input");
     document.body.style.background  = input.value;
+    document.getElementById("User").innerHtml = input.value; 
   }
