@@ -22,5 +22,7 @@ function handle(e){
   }
   
   function getInput(){
-    document.body.style.backgroundColor  = user-input.value;
+    // Gets Users Input
+    var input = document.getElementById("user-input");
+    document.body.style.background  = input.value;
   }
