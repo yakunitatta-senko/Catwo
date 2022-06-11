@@ -21,9 +21,10 @@ function handle(e){
     }
   }
   
-  function getInput(){
-    // Gets Users Input
-    var input = document.getElementById("user-input");
-    document.body.style.background  = input.value;
-    document.getElementById("User").innerHtml = input.value; 
-  }
+function getInput() {
+ var input = document.getElementById("user-input");
+  
+  document.body.style.backgroundColor= input.value;
+  
+  document.getElementById("User").innerHTML = input.value;
+}
