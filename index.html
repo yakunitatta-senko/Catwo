@@ -1,120 +1,89 @@
-* {
-  margin: auto;
-  padding: auto;
-  box-sizing: border-box;
-  font-family: consolas;
-}
+<!--<!Doctype html>
+<html>
+<div class="message"></div>
+<p onclick="test()">Bot: <span id="Bot">...</span></p>
+</div>
 
-#Bot:hover {
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  resize: 50%;
+</html>
 
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+  <title>|O W O|</title>
+
+  <!-- Contians Css Files Urls -->
+<!--Mainly Background and backz text -->
+
+<!--Useful Icons For Chatbot and Fonts like icons-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="bot-chat">
+    <p onclick=" test()">Bot: <span id="Bot">...</span></p>
+
+  </div>
+</body>
+
+<script src=" static/JS/chat.js"></script>
+<script src="static/JS/responses.js"></script>
+
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+  <title>|O W O|</title>
+
+  <!-- Contians Css Files Urls -->
+  <link rel="stylesheet" href="static/CSS/home.css"> <!-- Bro This is the bot its self contianing Bots Desgin and layout  -->
+  <link rel="stylesheet" href="static/CSS/chat.css">
+  <!--Mainly Background and backz text -->
+
+  <!--Useful Icons For Chatbot and Fonts like icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="bot-chat">
+      <p onclick="test()">Bot: <span id="Bot">...</span></p>
+    </div>
+    <div class=BotsHead></div>
+    
+    
+
+    <div class="user">
+      <p onclick="test()">User: <span id="User"></span></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="userInput">
+    <input id="user-input" placeholder="" onkeypress="ShowUserText() + handle(event)">
+  </div>
 
 
-#User:hover {
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  resize: 50%;
+</body>
 
-}
-
-/*/ the Users field /*/
-.user {
-  mix-blend-mode: difference;
-  font-size: 18px;
-  cursor: pointer;
-  resize: 50%;
-  color: white;
-}
-
-/*/ the Bots field /*/
-.bot-chat {
-  mix-blend-mode: difference;
-  color: white;
-}
-
-/*/Positions the Converstion in the middle of the screen/*/
+<!--JQurey-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-.userInput {
-  width: 200px;
-  background: transparent;
-  height: 27px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .25s linear;
-  position: absolute;
-  top: 50%;
-  left: 300px;
-  bottom: 400;
-  margin-top: 185px;
-  margin-left: 300px;
-
-}
 
 
-.userInput:hover {
-  width: 196px;
-  flex-grow: 196px;
-  glyph-orientation-horizontal: 100%;
-}
+<script src="static/JS/chat.js"></script>
+<script src="static/JS/responses.js"></script>
 
-.userInput::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 10%;
-  height: 100%;
-  border-radius: 50%;
-  background: linear-gradient(#9d9d9d, #9d9d9d, #e3e3e3);
-  z-index: 0;
-  filter: blur(1px);
-}
-
-.userInput::after {
-  content: '';
-  position: absolute;
-  bottom: 400;
-  right: -1px;
-  width: 5px;
-  height: 75%;
-  border-radius: 50%;
-  background: transparent;
-  z-index: 0;
-  filter: blur(1px);
-}
-
-.userInput input {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding: 10px 25px;
-  outline: none;
-  border-radius: 10%;
-  font-size: 1.1em;
-  color: #555;
-  background: linear-gradient(#dbdae1, #a3aaba);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
-    15px 15px 15px rgba(0, 0, 0, 0.1),
-    20px 20px 15px rgba(0, 0, 0, 0.1),
-    30px 30px 15px rgba(0, 0, 0, 0.1),
-    inset 1px 1px 2px #fff;
-}
-
-.userInput input::placeholder,
-.userInput input {
-  color: transparent;
-
-}
-
-.userInput:hover input::placeholder,
-.userInput:hover input {
-  color: #555;
-}
+</html>
