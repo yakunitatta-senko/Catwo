@@ -1,8 +1,14 @@
 /*/Testing IF This CSS WOrks/*/
 html {
-  background: gray;
+  animation: backgroud 30s linear infinite alternate-reverse;
+  cursor: auto;
 }
-
+@keyframes backgroud {
+  0% {background: ghostwhite;}
+  50% {background: rgb(0, 0, 13); }
+  100% {background: repeating-linear-gradient(5,0,12); }
+  
+}
 
 
 
@@ -10,7 +16,7 @@ html {
 /*/Positions the Converstion in the middle of the screen/*/
 #main {
   align-self:center;
-  color:white;
+  color: white;
   
   
 }
@@ -18,5 +24,25 @@ html {
 
 #Bot:hover {
   color: white;
+  cursor: pointer;
+  resize: 50%;
   
+}
+
+
+#User:hover {
+  color: white;
+  cursor: pointer;
+  resize: 50%;
+
+}
+
+.user{
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.bot-chat {
+  mix-blend-mode: difference;
+  color: white;
 }
