@@ -1,0 +1,120 @@
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+#Bot:hover {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  resize: 50%;
+
+}
+
+
+#User:hover {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  resize: 50%;
+
+}
+
+/*/ the Users field /*/
+.user {
+  mix-blend-mode: difference;
+  font-size: 18px;
+  cursor: pointer;
+  resize: 50%;
+  color: white;
+}
+
+/*/ the Bots field /*/
+.bot-chat {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+/*/Positions the Converstion in the middle of the screen/*/
+
+
+.userInput {
+  width: 200px;
+  background: transparent;
+  height: 27px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .25s linear;
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  bottom: 400;
+  margin-top: 185px;
+  margin-left: -50px;
+
+}
+
+
+.userInput:hover {
+  width: 196px;
+  flex-grow: 196px;
+  glyph-orientation-horizontal: 100%;
+}
+
+.userInput::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#9d9d9d, #9d9d9d, #e3e3e3);
+  z-index: 0;
+  filter: blur(1px);
+}
+
+.userInput::after {
+  content: '';
+  position: absolute;
+  bottom: 400;
+  right: -1px;
+  width: 5px;
+  height: 75%;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 0;
+  filter: blur(1px);
+}
+
+.userInput input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 10%;
+  font-size: 1.1em;
+  color: #555;
+  background: linear-gradient(#dbdae1, #a3aaba);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 15px rgba(0, 0, 0, 0.1),
+    30px 30px 15px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 2px #fff;
+}
+
+.userInput input::placeholder,
+.userInput input {
+  color: transparent;
+
+}
+
+.userInput:hover input::placeholder,
+.userInput:hover input {
+  color: #555;
+}
