@@ -62,9 +62,8 @@
 .userInput:hover {
   height: 27px;
 
-  width: 50%;
-  right: 300px;
-  glyph-orientation-horizontal: 100%;
+  width: 10%;
+  right: 10px;
 }
 
 .userInput::before {
