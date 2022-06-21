@@ -55,15 +55,8 @@
   bottom: 400;
   margin-top: 185px;
   margin-left: 300px;
+  color: #555;
 
-}
-
-
-.userInput:hover {
-  height: 27px;
-
-  width: 10%;
-  right: 10px;
 }
 
 .userInput::before {
@@ -87,8 +80,7 @@
   height: 75%;
   border-radius: 50%;
   background: transparent;
-  z-index: 0;
-  filter: blur(1px);
+  filter: blur(1);
 }
 
 .userInput input {
