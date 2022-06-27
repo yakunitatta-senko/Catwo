@@ -1,4 +1,3 @@
-
 var input = getInput(input);
 document.getElementById("user").innerHTML = input.value;
 
@@ -10,31 +9,27 @@ function getInput(input) {
 /// Shows the users text while typeing
 function ShowUserText() {
   var input = document.getElementById("user-input");
-  
   const ShowUserText = document.getElementById("User").innerHTML = input.value;
-  
-}
-
-function test() {
-  alert("Yep");
+  document.getElementById("User").innerHTML = input.value;
 
 }
 
-
-/// User Input
-
+/// press enter function
 function handle(e) {
   var key = e.which;
   if (key == 13) {
     alert(input.value);
-    getInput();
+    getInput()
+  }
+
+  //show what user is clicking
+  function test() {
+    alert(document.addEventListener);
+
   }
 }
 
+/// User Input
 function getInput() {
-  var input = document.getElementById("user-input");
-
-  document.html.style.backgroundColor = input.value;
-
-  document.getElementById("User").innerHTML = input.value;
+  document.getElementById("User").innerHTML = input.value = "";
 }
