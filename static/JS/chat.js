@@ -34,5 +34,6 @@ function handle(e) {
 
 /// User Input
 function getInput() {
+  var input = document.getElementById("user-input");
   document.getElementById("User").innerHTML = input.value = "";
 }
