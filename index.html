@@ -61,17 +61,17 @@
       <p onclick="test()">Bot: <span id="Bot">...</span></p>
     </div>
     <div class=BotsHead></div>
-    
-    
+
+
 
     <div class="user">
-      <p onclick="test()">User: <span id="User"></span></p>
+      <p onclick="test()">User: <span id="User" type="<textarea name="" id="" cols="30" rows="10"></textarea>"></span></p>
     </div>
   </div>
   </div>
 
   <div class="userInput">
-    <input id="user-input" placeholder="" onkeypress="ShowUserText() + handle(event)">
+    <input type="text" id="user-input" placeholder="" onkeypress="handle(event)" onkeydown="ShowUserText()">
   </div>
 
 
