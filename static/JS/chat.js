@@ -16,6 +16,7 @@ function ShowUserText() {
 
 /// press enter function
 function handle(e) {
+  var input = document.getElementById("user-input");
   var key = e.which;
   if (key == 13) {
     alert(input.value);
