@@ -1,5 +1,7 @@
 var input = getInput(input);
 document.getElementById("user").innerHTML = input.value;
+var input = document.getElementById("user-input");
+
 
 function getInput(input) {
   return input;
