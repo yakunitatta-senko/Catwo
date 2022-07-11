@@ -41,8 +41,8 @@
 
 
 .userInput {
-  width: 250px;  
-  height: 5%;  
+  width: 250px;
+  height: 5%;
   background: transparent;
   border-radius: 50%;
   display: flex;
@@ -118,5 +118,12 @@
   background: #00000080;
   border-radius: 50%;
   margin-top: 40px;
-  margin-left: 550px
+  margin-left: 550px;
+  transition: background-color 2s ease-out 100ms
+  
+}
+
+.BotsHead:hover {
+  background-color: #38c8bc;
+
 }
