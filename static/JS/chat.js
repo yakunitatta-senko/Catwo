@@ -42,6 +42,6 @@ function handle(e) {
     ourText = textInputField.value;
     utterThis.text = ourText;
     synth.speak(utterThis);
-    textInputField.value = document.getElementById('user-input').value;
+    textInputField.value = "";
   }
 }
