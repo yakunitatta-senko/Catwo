@@ -43,7 +43,6 @@
   <meta charset="UTF-8">
   <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-  <title>|O W O|</title>
 
   <!-- Contians Css Files Urls -->
   <link rel="stylesheet" href="static/CSS/home.css"> <!-- Bro This is the bot its self contianing Bots Desgin and layout  -->
@@ -52,34 +51,60 @@
 
   <!--Useful Icons For Chatbot and Fonts like icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://css.gg/boy.css' rel='stylesheet'>
 </head>
 
 <body>
 
   <div class="main">
-    <div class="bot-chat">
-      <p onclick="test()">Bot: <span id="Bot">...</span></p>
-    </div>
-    <div class=BotsHead></div>
 
+    <div class="main1">
 
+      <!-- BOT -->
+      <div class="bot-chat">
+        <p id="Bot" ondrag="getposition()" onclick="test()"> ------- > --Bot-- < --------- <td>
+            <div class="box2">
+              <space></space>
+              <!--ooo-->
 
-    <div class="user">
-      <p id="UserText"  onclick="test()">   ------- > --User-- < ---------
-      
-      <td>
-      
-      <div class="box">
-        
-      <space></space>  
-        <span id="User" class="text" type="textarea"></span></p>
+              <!--Users Text-->
+              <span id="Bot" class="text2"></span></p>
       </div>
+      <!--ooo-->
+    </div>
+    <!--...-->
+
+
+
+
+
+
+    <div class="main2">
+      <!--User-->
+      <div class="user-chat">
+        <p id="UserText" onclick="test2()"> ------- > --User-- < --------- <td>
+            <div class="box">
+              <space></space>
+              <!--ooo-->
+
+              <!--Users Text-->
+              <span id="User" class="text"></span></p>
+      </div>
+      <!--ooo-->
+
     </div>
   </div>
 
+  <!--The Bots Face-->
+  <div class="BotsHead">
+  </div>
+  <!--...-->
+
+  <!--User Input-->
   <div class="userInput">
     <input type="text" id="user-input" placeholder="" onkeypress="handle(event)" onkeydown="ShowUserText()">
   </div>
+
 
 
 </body>
