@@ -18,9 +18,19 @@ p {
   align-items: center;
   flex-wrap: auto;
   align-content: center;
-  position: inherit;
+  position: 00;
 }
 
+#Bot {
+  font-size: auto;
+  flex: justify-content;
+  justify-self: auto;
+  align-self: center;
+  align-items: center;
+  flex-wrap: auto;
+  align-content: center;
+  position: 00;
+}
 
 #Bot:hover {
   color: white;
@@ -30,7 +40,7 @@ p {
 }
 
 
-#UserText:hover {  
+#UserText:hover {
   font-style: bold;
   color: white;
   font-size: 24px;
@@ -52,19 +62,39 @@ p {
   resize: both;
 }
 
+.box2 {
+  justify-content: auto;
+  position: fixed;
+  width: 200px;
+  height: 150px;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+  resize: both;
+}
+
 /*/ the Users field /*/
-.user {
+.user-chat {
   mix-blend-mode: difference;
   font-size: 18px;
   cursor: pointer;
   resize: 50%;
   color: white;
+  float: left;
 }
 
 /*/ the Bots field /*/
 .bot-chat {
   mix-blend-mode: difference;
+  font-size: 18px;
+  cursor: pointer;
+  resize: 50%;
   color: white;
+  float: right;
+  right: 15px;
+  align-self: inherit;
+
+
+
 }
 
 /*/Positions the Converstion in the middle of the screen/*/
@@ -86,7 +116,6 @@ p {
   margin-top: 185px;
   margin-left: 300px;
   color: #555;
-
 }
 
 .userInput::after {
@@ -149,10 +178,16 @@ p {
   border-radius: 50%;
   margin-top: 40px;
   margin-left: 550px;
-  transition: background-color 2s ease-out 100ms
+  transition: background 2s ease-out 100ms;
+  transition: border-radius 2s ease-out 100ms;
+
 }
 
 .BotsHead:hover {
-  background-color: #38c8bc;
+  mix-blend-mode: difference;
+
+  background-color: #fff;
+
+  border-radius: 0;
 
 }
