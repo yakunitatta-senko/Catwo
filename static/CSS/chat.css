@@ -24,29 +24,34 @@ p {
 }
 
 #Bot {
-  font-size: auto;
-  flex: justify-content;
-  justify-self: auto;
-  align-self: center;
-  align-items: center;
   flex-wrap: auto;
-  align-content: center;
-  position: 0;
-  box-orient: 10px;
+  justify-self: flex;
+  font-size: 18px;
+  cursor: pointer;
+  resize: 50%;
+  color: white;
+  width: 200px;
+  border-color: black;
+  mix-blend-mode: difference;
+  right: -68px;
+  top: -115px;
+  align-self: inherit;
+  position: absolute;
 }
 
 #Bot:hover {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   resize: 50%;
+  width: 200px;
 }
 
 
 #UserText:hover {
   font-style: bold;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   resize: 50%;
 }
@@ -57,7 +62,7 @@ p {
 }
 
 .text1 {
-  max-width: 100%;
+  max-width: 80%;
   min-width: 0%;
 }
 
@@ -68,7 +73,7 @@ p {
   word-spacing: initial;
   letter-spacing: 1px;
   font-size: auto;
-  left: 20px;
+  left: -45px;
   width: 300px;
   height: 150px;
   overflow-x: auto;
@@ -77,23 +82,27 @@ p {
 }
 
 .box2 {
-  justify-content: auto;
-  position: inherit;
-  y-content: inherit;
   word-spacing: initial;
   letter-spacing: 1px;
   font-size: auto;
-  right: 100px;
-  width: 300px;
-  height: 150px;
   overflow-x: auto;
   overflow-wrap: break-word;
+  max-width: 360px;
+  min-width: 100%;
+  max-height: 330px;
+  width: 330px;
+  border-radius: 5px;
+  height: 65px;
+  background: rgba(3, 3, 3, 0.25);
+  box-shadow: 1px 1px 50px #000;
   resize: both;
+  top: 250px;
 }
 
 /*/ the Users field /*/
 .user-chat {
-  mix-blend-mode: difference;
+  flex-wrap: auto;
+  justify-self: flex;
   font-size: 18px;
   cursor: pointer;
   resize: 50%;
@@ -101,25 +110,27 @@ p {
   width: 200px;
   border-color: black;
   mix-blend-mode: difference;
-  left: 60px;
-  top: 150px;
+  left: 130px;
+  top: 350px;
   align-self: inherit;
-  position: fixed;
+  position: absolute;
 }
 
 /*/ the Bots field /*/
 .bot-chat {
+  flex-wrap: auto;
+  justify-self: flex;
   font-size: 18px;
   cursor: pointer;
   resize: 50%;
   color: white;
   width: 200px;
-  border-color: white;
+  border-color: black;
   mix-blend-mode: difference;
-  right: 60px;
-  top: 150px;
+  right: 150px;
+  top: 135px;
   align-self: inherit;
-  position: fixed;
+  position: absolute;
 }
 
 /*/Positions the Converstion in the middle of the screen/*/
@@ -196,24 +207,58 @@ p {
   color: #555;
 }
 
-.BotsHead {
-  width: 300px;
-  height: 300px;
-  background: #00000080;
-  border-radius: 50%;
-  margin-top: 40px;
-  margin-left: 550px;
-  transition: background 2s ease-out 100ms;
-  transition: border-radius 2s ease-out 100ms;
+.Bot-Container {
+  font-size: auto;
+  box-orient: 10px;
+  width: 360px;
+  height: 260px;
+  border-radius: 5px;
+  flex-wrap: auto;
+  justify-self: flex;
+  resize: 50%;
+  right: 50px;
+  top: 330px;
+  color: black;
+  align-self: inherit;
+  transition: background-color ease-out 2s 150s;
+  position: absolute;
+}
 
+.Bot-Container:hover {
+  background: rgba(3, 3, 3, 255);
+  box-shadow: 1px 1px 50px #000;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.BotsHead {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-left: 560px;
+  transition: background-image 2s ease-out 100ms;
+  transition: border-radius 2s ease-out 100ms;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(1, 12, 3, 11.8);
+  overflow: hidden;
+  opacity: 100.8;
+  box-shadow: 10px 10px 30px #000;
+  z-index: 0;
 }
 
 .BotsHead:hover {
-  mix-blend-mode: difference;
-
-  background-color: #fff;
-
   border-radius: 0;
+  transform: translate(30px, 20px) rotate(20deg);
+  transform: rotate(1turn);
+
 
 }
 
@@ -233,4 +278,148 @@ p {
   overflow: auto;
 
 
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  top: 350px;
+  left: 600px;
+  transform: rotate(0turn);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  transition: background-color ease-out 2s 150s;
+  z-index: 0;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 0;
+}
+
+ul li a:hover .icon {
+  transform: rotate(1.5turn);
+  transform: rotateY(160deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: 5s ease-in-out 6ms;
+  z-index: -9;
+}
+
+ul li a:hover:before {
+  transform: rotate(1.5turn);
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  transform: rotate(0.5turn);
+  color: white;
+}
+
+ul li:nth-child(2) a:before {
+  transform: rotate(0.5turn);
+  background: transparent;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+
+
+
+
+
+#s1 {
+  font-size: 1px;
+  cursor: pointer;
+  overflow: hiddden 1px;
+  padding: auto;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  width: 250px;
+  background: transparent;
+  mix-blend-mode: difference;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .25s linear;
+  position: absolute;
+  top: 60%;
+  left: 290px;
+  bottom: 400;
+  margin-top: 185px;
+  margin-left: 300px;
+  color: #555;
+  border: 1px #262626 solid;
+}
+
+#p1 {
+  font-size: 1px;
+  cursor: pointer;
+  overflow: hiddden 1px;
+  padding: auto;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  width: 250px;
+  background: transparent;
+  mix-blend-mode: difference;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .25s linear;
+  position: absolute;
+  top: 66%;
+  left: 290px;
+  bottom: 400;
+  margin-top: 185px;
+  margin-left: 300px;
+  color: #555;
+  border: 1px #262626 solid;
+}
+
+
+
+#s1:hover {
+  font-size: 10px;
+}
+
+
+#p1:hover {
+  font-size: 10px;
 }
