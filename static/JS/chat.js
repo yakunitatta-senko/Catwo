@@ -13,8 +13,8 @@ function handle(e) {
     getInput(input);
   }
 
-  function getInput(input) {   
-    var input = document.getElementById("user-input");    
+  function getInput(input) {
+    var input = document.getElementById("user-input");
     document.getElementById("User").innerHTML = input.value = "";
     let text = (input.toLowerCase()).replace(/[^\w\s\d]/gi, "");
   }
