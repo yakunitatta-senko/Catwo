@@ -138,7 +138,7 @@ p {
 
 .userInput {
   padding: auto;
-  width: 250px;
+  width: 258px;
   height: 5%;
   background: transparent;
   border-radius: auto;
@@ -148,7 +148,7 @@ p {
   transition: .25s linear;
   position: absolute;
   top: 50%;
-  left: 290px;
+  left: 275px;
   bottom: 400;
   margin-top: 185px;
   margin-left: 300px;
@@ -283,8 +283,8 @@ img {
 ul {
   display: flex;
   position: absolute;
-  top: 350px;
-  left: 600px;
+  top: 355px;
+  left: 605px;
   transform: rotate(0turn);
 }
 
@@ -423,4 +423,3 @@ ul li:nth-child(4) a:before {
 #p1:hover {
   font-size: 10px;
 }
-//
