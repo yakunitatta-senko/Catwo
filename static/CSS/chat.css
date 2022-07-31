@@ -6,6 +6,7 @@
 }
 
 p {
+  position: auto;
   font-size: auto;
 }
 
@@ -18,7 +19,8 @@ p {
   align-items: center;
   flex-wrap: auto;
   align-content: center;
-  position: 00;
+  position: auto;
+  border-right: 10px;
 }
 
 #Bot {
@@ -29,7 +31,8 @@ p {
   align-items: center;
   flex-wrap: auto;
   align-content: center;
-  position: 00;
+  position: 0;
+  box-orient: 10px;
 }
 
 #Bot:hover {
@@ -50,12 +53,23 @@ p {
 
 .text {
   max-width: 100%;
+  min-width: 0%;
+}
+
+.text1 {
+  max-width: 100%;
+  min-width: 0%;
 }
 
 .box {
   justify-content: auto;
-  position: fixed;
-  width: 200px;
+  position: inherit;
+  y-content: inherit;
+  word-spacing: initial;
+  letter-spacing: 1px;
+  font-size: auto;
+  left: 20px;
+  width: 300px;
   height: 150px;
   overflow-x: auto;
   overflow-wrap: break-word;
@@ -64,8 +78,13 @@ p {
 
 .box2 {
   justify-content: auto;
-  position: fixed;
-  width: 200px;
+  position: inherit;
+  y-content: inherit;
+  word-spacing: initial;
+  letter-spacing: 1px;
+  font-size: auto;
+  right: 100px;
+  width: 300px;
   height: 150px;
   overflow-x: auto;
   overflow-wrap: break-word;
@@ -79,32 +98,39 @@ p {
   cursor: pointer;
   resize: 50%;
   color: white;
-  float: left;
+  width: 200px;
+  border-color: black;
+  mix-blend-mode: difference;
+  left: 60px;
+  top: 150px;
+  align-self: inherit;
+  position: fixed;
 }
 
 /*/ the Bots field /*/
 .bot-chat {
-  mix-blend-mode: difference;
   font-size: 18px;
   cursor: pointer;
   resize: 50%;
   color: white;
-  float: right;
-  right: 15px;
+  width: 200px;
+  border-color: white;
+  mix-blend-mode: difference;
+  right: 60px;
+  top: 150px;
   align-self: inherit;
-
-
-
+  position: fixed;
 }
 
 /*/Positions the Converstion in the middle of the screen/*/
 
 
 .userInput {
+  padding: auto;
   width: 250px;
   height: 5%;
   background: transparent;
-  border-radius: 50%;
+  border-radius: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +189,6 @@ p {
 .userInput input::placeholder,
 .userInput input {
   color: transparent;
-
 }
 
 .userInput:hover input::placeholder,
@@ -189,5 +214,23 @@ p {
   background-color: #fff;
 
   border-radius: 0;
+
+}
+
+
+.userInput [type=text] {
+  width: calc(100% - 20px);
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}
+
+.user-input {
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+
 
 }
